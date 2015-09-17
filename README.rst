@@ -8,29 +8,10 @@
 .. image:: https://coveralls.io/repos/okfn/ckanext-opendataje/badge.svg
   :target: https://coveralls.io/r/okfn/ckanext-opendataje
 
-.. image:: https://pypip.in/download/ckanext-opendataje/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-opendataje/
-    :alt: Downloads
 
-.. image:: https://pypip.in/version/ckanext-opendataje/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-opendataje/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-opendataje/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-opendataje/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-opendataje/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-opendataje/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-opendataje/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-opendataje/
-    :alt: License
-
-=============
+==================
 ckanext-opendataje
-=============
+==================
 
 .. Put a description of your extension here:
    What does it do? What features does it have?
@@ -41,8 +22,8 @@ ckanext-opendataje
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+* ckanext-pages: https://github.com/ckan/ckanext-pages
+* ckanext-showcase: https://github.com/ckan/ckanext-showcase
 
 
 ------------
@@ -110,9 +91,9 @@ coverage installed in your virtualenv (``pip install coverage``) then run::
     nosetests --nologcapture --with-pylons=test.ini --with-coverage --cover-package=ckanext.opendataje --cover-inclusive --cover-erase --cover-tests
 
 
----------------------------------
+--------------------------------------
 Registering ckanext-opendataje on PyPI
----------------------------------
+--------------------------------------
 
 ckanext-opendataje should be availabe on PyPI as
 https://pypi.python.org/pypi/ckanext-opendataje. If that link doesn't work, then
@@ -139,9 +120,9 @@ steps:
        git push --tags
 
 
-----------------------------------------
+---------------------------------------------
 Releasing a New Version of ckanext-opendataje
-----------------------------------------
+---------------------------------------------
 
 ckanext-opendataje is availabe on PyPI as https://pypi.python.org/pypi/ckanext-opendataje.
 To publish a new version to PyPI follow these steps:
