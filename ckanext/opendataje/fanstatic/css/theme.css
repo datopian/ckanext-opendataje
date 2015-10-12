@@ -380,10 +380,14 @@ input[type="color"],
   background-color: #eef0f0;
   color: #1d1d1b;
 }
-.masthead .logo {
+.masthead .header-image {
+  margin: 22px 0;
+}
+.masthead .header-image .logo {
   display: block;
   width: 282px;
-  margin: 22px 0;
+  margin: 0;
+  height: 44px;
 }
 .masthead .nav-collapse {
   background-color: #b60011;
