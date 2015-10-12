@@ -1,0 +1,82 @@
+.homepage {
+  
+  .hero {
+    padding-bottom:0;
+    padding-top:20px;
+    background-color:@lightgrey;
+    border-top:solid 1px darken(@mediumgrey, 3%);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+      
+    h2 {
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+      
+    .featured-groups {
+        margin-left: 0;
+        
+        @media (min-width: @md) {
+            margin-left: -46px;
+        }
+        @media (min-width: @lg) {
+            margin-left: -80px;
+        }
+        li {
+            display: block;
+            margin-bottom: 36px;
+            
+            a {
+                display: block;
+                border: solid 1px @text-color;
+                background-color: #fff;
+                text-align: center;
+                text-decoration: none;
+                
+                img {
+                    height: 90px;
+                }
+                
+                h3 {
+                    font-size: @font-size;
+                    font-weight: normal;
+                    color: @text-color;
+                    margin: 10px;
+                }
+            }
+            
+            @media (min-width: @md) {
+                width: 146px;
+                margin-left: 46px;
+                float: left;
+                min-height: 1px;
+                
+                a {
+                    height: 146px;
+                    overflow: hidden;
+                }
+            }
+            @media (min-width: @lg) {
+                width: 175px;
+                margin-left: 80px;
+                margin-bottom: 50px;
+                
+                a {
+                    height: 175px;
+                    
+                     img {
+                        height: 115px;
+                    }
+                }
+            }  
+        }
+    }
+  }
+    
+    & + .site-footer {
+        margin-top: 0;
+    }
+}

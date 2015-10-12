@@ -1,0 +1,12 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  {% resource 'opendataje/css/theme.css' %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="https://use.typekit.net/npl5qjc.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>         
+{% endblock %}

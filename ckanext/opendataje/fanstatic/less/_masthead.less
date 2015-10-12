@@ -1,0 +1,109 @@
+.masthead {
+  background-color: @lightgrey;
+  color:@text-color;
+  
+  .logo {
+    display:block;
+    width:282px;
+    margin:22px 0;
+  }
+  
+  .nav-collapse {
+    background-color:@primary;
+    clear:both;
+    position:static;
+    .full-width;
+  }
+  
+  .site-search {
+      background-color: @mediumgrey;
+      .full-width;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      
+      .field {
+          max-width: 630px;
+          
+          label {
+              display: block;
+              font-weight: normal;
+              
+              &:after {
+                  content: '';
+              }
+          }
+          
+          input {
+              width: 100%;
+              padding: 7px 95px 7px 14px;
+              margin: 0;
+              box-sizing: border-box;
+          }
+          
+          .btn-search {
+              background-color: @primary;
+              color: #fff;
+              height: 36px;
+              margin-top: 0;
+              padding: 0 20px;
+              right: 0;
+              top: auto;
+              bottom: 0;
+              width: auto;
+              
+              .icon-search {
+                  font-family: @font-family-sans-serif;
+                  
+                  &:before {
+                      content: '';
+                  }
+                  &:after {
+                      content: 'Search';
+                  }
+              }
+          }
+      }
+      
+  }
+  
+  .nav,
+  .navigation .nav-pills {
+    margin-left:-16px;
+    
+    & > li {
+      
+      & > a {
+        padding:16px;
+        margin:0;
+        color:#fff;
+        border-radius: 0;
+        position:relative;
+        
+        &:hover {
+          background-color:@primary;
+        }
+      }
+      
+      &.active > a {
+        background-color:transparent;
+        box-shadow:none;
+      }
+    }
+  }
+  
+  @media (min-width: @md) {
+      .navigation {
+          text-align: right;
+          margin: 0;
+          font-size: 0;
+          
+           .nav-pills {
+               display: inline-block;
+               margin: 0 -16px 0 0;
+               font-size: @font-size;
+           }
+      }
+  }
+}

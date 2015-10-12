@@ -1,0 +1,22 @@
+{% ckan_extends %}
+
+{% block content %}
+  <div class="homepage">
+    <div class="container">
+        {{ self.flash() }}
+    </div>
+
+    <div role="main" class="hero">
+        <div class="container">
+            <h2>{{ _('Browse topics') }}</h2>
+
+            <ul class="featured-groups">
+            {% for group in h.get_featured_groups(count=8) %}
+              {% snippet "home/snippets/group_item.html", group=group, position=loop.index %}
+            {% endfor %}
+            </ul>
+        </div>
+
+      </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+.toolbar {
+  border-top:solid 1px darken(@mediumgrey, 3%);
+  .full-width;
+  margin-bottom:0;
+  
+  .breadcrumb {
+    font-size:14px;
+    color:@text-color;
+    
+    @media (min-width: @md) {
+      margin-bottom: 20px;
+      margin-top: 12px;
+    }
+    
+    li {
+      text-shadow:none;
+      
+      &.home {
+          .icon-home {
+              display: none;
+          }
+          span {
+              display: inline-block;
+              text-decoration: underline;
+          }
+      }
+        
+      &:after {
+            content: " > ";
+        }
+      
+      a {
+        color:inherit;
+      }
+      
+      &.active {
+        color:inherit;
+        font-weight:normal;
+        
+        a {
+          font-weight:inherit;
+        }
+      }
+    }
+  }
+}
