@@ -11,3 +11,6 @@ class OpendatajePlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('fanstatic', 'opendataje')
+
+        config_['licenses_group_url'] = '{0}/licenses.json'.format(
+            config_['ckan.site_url'].rstrip('/'))
