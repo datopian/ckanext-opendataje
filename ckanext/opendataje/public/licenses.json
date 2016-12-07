@@ -28,6 +28,20 @@
     "url": "https://opendata.gov.je/pages/open-government-licence-jersey-ogl-j-v1-0"
   },
   {
+    "domain_content": true,
+    "domain_data": true,
+    "domain_software": true,
+    "family": "",
+    "id": "OSAL-J-1.0",
+    "is_generic": false,
+    "maintainer": "States of Jersey",
+    "od_conformance": "not reviewed",
+    "osd_conformance": "not reviewed",
+    "status": "active",
+    "title": "Open States Assembly Licence – Jersey v1.0",
+    "url": "https://opendata.gov.je/pages/open-states-assembly-licence-jersey-osal-j-v1-0"
+  },
+  {
     "domain_content": false,
     "domain_data": true,
     "domain_software": false,
